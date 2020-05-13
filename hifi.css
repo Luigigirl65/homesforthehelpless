@@ -1,0 +1,88 @@
+body {
+    background-color: rgb(211, 186, 153) !important;
+  }
+  h1{
+    text-align: center;
+  }ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+    background-color: rgb(196, 196, 196);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(196, 196, 196);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .column {
+    float: left;
+    width: 50%;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  p {
+    text-align: center;
+    text-decoration-color: rgb(160, 122, 78) !important;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  h5 {
+    text-align: center;
+    text-decoration-color: antiquewhite !important;
+  }
+  .circleImage {
+    border-radius: 70%;
+    border-color: rgb(59, 39, 13);
+    border-style: solid;
+    border-width: 7px;
+  }
+  .content_img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 10px;
+   }
+   
+   .content_img div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: rgb(136, 110, 55);
+    color: rgb(0, 0, 0);
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+   }
+   
+   .content_img:hover{
+    cursor: pointer;
+   }
+   
+   .content_img:hover div{
+    width: 150px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 0.7; 
+   }
